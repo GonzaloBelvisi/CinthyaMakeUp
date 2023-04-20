@@ -1,2 +1,2 @@
 # CinthyaMakeUp
-Pagina Web de maquillaje cinthyamakeup.uy
+Pagina Web de maquillaje https://www.cinthyamakeup.uy/
