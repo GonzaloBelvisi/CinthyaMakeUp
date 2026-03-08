@@ -29,7 +29,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #e84393;
+  background: linear-gradient(135deg, #6b2fa0, #2a0d6e);
 }
 
 section {
@@ -73,7 +73,7 @@ section {
 
 .btn:hover {
   color: #fff;
-  background: #e84393;
+  background: #6b2fa0;
 }
 
 .heading {
@@ -132,8 +132,15 @@ section {
   z-index: 1000;
 }
 
-.header .logo img {
-  height: 4rem;
+.header .logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6b2fa0, #2a0d6e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: none;
 }
 
 .header .search-form {
@@ -166,7 +173,7 @@ section {
 }
 
 .header .search-form label:hover {
-  color: #e84393;
+  color: #6b2fa0;
 }
 
 .header .icons a,
@@ -185,7 +192,7 @@ section {
 
 .header .icons a:hover,
 .header .icons div:hover {
-  background: #e84393;
+  background: #6b2fa0;
   color: #fff;
 }
 
@@ -240,7 +247,7 @@ section {
 
 .navbar #close-navbar:hover {
   color: #fff;
-  background: #e84393;
+  background: #6b2fa0;
 }
 
 .navbar a {
@@ -251,7 +258,7 @@ section {
 }
 
 .navbar a:hover {
-  color: #e84393;
+  color: #6b2fa0;
   letter-spacing: .2rem;
 }
 
@@ -286,7 +293,7 @@ section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background: #fce9f2;
+  background: linear-gradient(135deg, #6b2fa0 0%, #2a0d6e 100%);
   position: relative;
 }
 
@@ -300,7 +307,7 @@ section {
 }
 
 .home .slide .content span {
-  color: #e84393;
+  color: #e8a0d0;
   display: block;
   font-size: 2rem;
   padding-bottom: .5rem;
@@ -312,8 +319,9 @@ section {
 
 .home .slide .content h3 {
   font-size: 5.5rem;
-  text-transform: uppercase;
-  color: #222;
+  font-family: 'Dancing Script', cursive;
+  text-transform: none;
+  color: #fff;
   -webkit-animation: fadeUp .2s linear backwards .6s;
           animation: fadeUp .2s linear backwards .6s;
 }
@@ -321,6 +329,15 @@ section {
 .home .slide .content .btn {
   -webkit-animation: fadeUp .2s linear backwards .8s;
           animation: fadeUp .2s linear backwards .8s;
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.home .slide .content .btn:hover {
+  background: #6b2fa0;
+  border-color: #6b2fa0;
+  color: #fff;
 }
 
 .home .slide .content .controls {
@@ -335,16 +352,16 @@ section {
   line-height: 5rem;
   text-align: center;
   font-size: 3rem;
-  background: #fff;
-  color: #222;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
   margin: 0 1rem;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
 .home .slide .content .controls div:hover {
-  background: #e84393;
+  background: #6b2fa0;
   color: #fff;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -419,7 +436,7 @@ section {
 }
 
 .about .content span {
-  color: #e84393;
+  color: #6b2fa0;
   font-size: 2rem;
 }
 
@@ -464,15 +481,19 @@ section {
   padding: .5rem 1.5rem;
   font-size: 1.5rem;
   color: #fff;
-  background: #e84393;
+  background: #6b2fa0;
   z-index: 10;
 }
 
 .shop .slide .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  object-position: center top;
 }
 
 .shop .slide .image .icons {
@@ -497,7 +518,7 @@ section {
 }
 
 .shop .slide .image .icons a:hover {
-  background: #e84393;
+  background: #6b2fa0;
   color: #fff;
 }
 
@@ -523,7 +544,7 @@ section {
 
 .shop .slide .content .price {
   font-size: 2rem;
-  color: #e84393;
+  color: #6b2fa0;
 }
 
 .shop .slide .content .price span {
@@ -657,7 +678,7 @@ section {
 
 .team .box-container .box .content p {
   font-size: 1.5rem;
-  color: #e84393;
+  color: #6b2fa0;
 }
 
 .arrivals .slide {
@@ -696,7 +717,7 @@ section {
 
 .arrivals .slide .content .price {
   font-size: 2rem;
-  color: #e84393;
+  color: #6b2fa0;
 }
 
 .arrivals .slide .content .price span {
@@ -728,7 +749,7 @@ section {
 
 .reviews-slider .slide .user .stars i {
   font-size: 1.5rem;
-  color: #e84393;
+  color: #6b2fa0;
 }
 
 .reviews-slider .slide .text {
@@ -856,12 +877,12 @@ section {
 }
 
 .blogs .slide .image .icons a i {
-  color: #e84393;
+  color: #6b2fa0;
   padding-right: .5rem;
 }
 
 .blogs .slide .image .icons a:hover {
-  color: #e84393;
+  color: #6b2fa0;
 }
 
 .blogs .slide .content {
@@ -908,11 +929,11 @@ section {
 
 .footer .box-container .box .link i {
   padding-right: .5rem;
-  color: #e84393;
+  color: #6b2fa0;
 }
 
 .footer .box-container .box .link:hover {
-  color: #e84393;
+  color: #6b2fa0;
 }
 
 .footer .box-container .box .link:hover i {
@@ -927,7 +948,7 @@ section {
 
 .footer .box-container .box p i {
   padding-right: .5rem;
-  color: #e84393;
+  color: #6b2fa0;
 }
 
 .footer .box-container .box .share {
@@ -947,7 +968,7 @@ section {
 }
 
 .footer .box-container .box .share a:hover {
-  background: #e84393;
+  background: #6b2fa0;
   color: #fff;
 }
 
@@ -972,7 +993,7 @@ section {
 }
 
 .footer .credit span {
-  color: #e84393;
+  color: #6b2fa0;
 }
 
 @media (max-width: 991px) {
